@@ -1,0 +1,6 @@
+{
+  "KEY1":"c0b87b13f99041f29117679fd7f4638a",
+  "KEY2":"b0323c4b8098487ab5faa9b41643c20a",
+  "ENDPOINT":"https://eastus.api.cognitive.microsoft.com/sts/v1.0/issuetoken",
+  "LOCATION":"eastus"
+}

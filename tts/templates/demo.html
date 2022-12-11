@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Mawdoo3 AI</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="{{root_path}}/static/img/favicon.ico">
+
+    <link rel="stylesheet" href="{{root_path}}/static/css/bootstrap4.min.css">
+    <link rel="stylesheet" href="{{root_path}}/static/css/bootstrap4-toggle.min.css">
+    <link rel="stylesheet" href="{{root_path}}/static/css/navbar.css">
+    <link rel="stylesheet" href="{{root_path}}/static/css/component.css">
+    <link rel="stylesheet" href="{{root_path}}/static/css/general.css">
+    <link rel="stylesheet" href="{{root_path}}/static/css/samples.css">
+    <link rel="stylesheet" href="{{root_path}}/static/css/presenter.css">
+    <link rel="stylesheet" href="{{root_path}}/static/css/toggle.css">
+    <script> var global = global || window; </script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" routerLink="/">
+                <img src="{{root_path}}/static/img/logo-white.svg" id="logo" class="position-relative"
+                    alt="Mawdoo3-logo">
+            </a>
+
+    </nav>
+
+    <section id="single-api">
+        <div class="container relative" style="padding: 50px 0;">
+
+            <div class="header d-flex">
+                <div>
+                    <h2 class="title">Text-To-Speech (TTS)</h2>
+                    <p class="sub-title">Choose your text, analyze, and compare players</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-5">
+
+                    <p class="text-area-title">Sample Text</p>
+                    <div class="form-group">
+
+                        <div class="form-group sample-queries short">
+                            <ul class="list-group">
+                                {% for sample in samples%}
+                                <li onclick='setSample("{{sample}}")' class="list-group-item sample-element pointer">
+                                    <a>{{sample}}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div>
+                        <p class="text-area-title">Input Text</p>
+                        <div class="form-group">
+                            <textarea class="text-area-field form-control" id="input-text" oninput="onTextChange()"
+                                name="text" rows="4" placeholder="أدخل النص هنا.." dir="rtl"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="text-area-title" style="margin: auto;margin-left: 1rem;">
+                            <img class="tashkeel-img" src="{{root_path}}/static/img/tashkeel.png" />
+                            Add Tashkeel
+                        </div>
+                        <div style="margin:auto; margin-right: 1rem;">
+                            <input type="checkbox" id="useTashkeel" data-toggle="toggle" data-style="android"
+                                data-onstyle="info" data-on=" " data-off=" " data-offstyle="outline-info"
+                                data-size="sm" />
+                        </div>
+                    </div>
+                </div>
+                <div class="analyze-cont col-12 col-lg-2">
+                    <button disabled class="btn analyze-btn" id="btn-send" onclick='onAnalyzeClick("{{root_path}}")'>
+                        Analyze
+                    </button>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <p class="text-area-title">Players</p>
+                    <div class="presenter-cont">
+                        <div id="Presenter">
+
+                            <div>
+                                <div class="players">
+                                    <div class="card mb-3 player mawdoo3">
+
+                                        <div id="salma" class="card-body text-dark" style='height: 86px;'>
+                                            <div class="audio" hidden>
+                                                <audio controls class="small-player">
+                                                    <source src="" type="audio/mp3">
+                                                    Your browser does not support the audio element.
+                                                </audio>
+
+                                                <div class="small-player-text" style="margin-top: 1.5rem;">Salma AI
+                                                </div>
+                                            </div>
+                                            <div class="filler" hidden> no reply from Salma</div>
+                                        </div>
+
+                                        <div id="google" class="card-body text-dark" style='height: 86px;'>
+                                            <div class="audio" hidden>
+                                                <audio controls id="audio-google" class="small-player">
+                                                    <source id="source-google" src="" type="audio/mp3">
+                                                    Your browser does not support the audio element.
+                                                </audio><br />
+                                                <div class="small-player-text">Google</div>
+                                            </div>
+
+                                            <div class="filler" hidden> no reply from Google</div>
+                                        </div>
+
+                                        <div id="azure" class="card-body text-dark" style='height: 86px;'>
+                                            <div class="audio" hidden>
+                                                <audio controls id="audio-azure" class="small-player">
+                                                    <source id="source-azure" src="" type="audio/mp3">
+                                                    Your browser does not support the audio element.
+                                                </audio><br />
+
+                                                <div class="small-player-text">Azure</div>
+                                            </div>
+                                            <div class="filler" hidden> no reply from Azure</div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+<footer>
+    <script src="{{root_path}}/static/js/jquery-3.2.1.min.js"></script>
+    <script src="{{root_path}}/static/js/popper.min.js"></script>
+    <script src="{{root_path}}/static/js/bootstrap4.min.js"></script>
+    <script src="{{root_path}}/static/js/analyzing.js"></script>
+    <script src="{{root_path}}/static/js/bootstrap4-toggle.min.js"></script>
+</footer>
+
+</html>

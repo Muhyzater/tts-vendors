@@ -1,0 +1,68 @@
+.sample-element,.sample-element-audio{
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 2;
+  }
+  .sample-element-audio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 1;
+  }
+  .sample-queries,.sample-audio-queries {
+    direction: rtl;
+    text-align: right;
+    height: 350px;
+    overflow-y: auto;
+  }
+  .sample-queries.short{
+    height: 150px;
+  }
+  .sample-audio-queries.short{
+    height: 82px;
+  }
+  
+  .sample-queries a, .sample-audio-queries a {
+    cursor: pointer;
+    color: #010544;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  
+  .sample-queries .list-group, .sample-audio-queries .list-group {
+    padding-right: 0;
+  }
+  
+  .ask-button {
+    font-family: sans-serif;
+    vertical-align: text-top;
+  }
+  
+  .sample-element:hover,.sample-element-audio:hover {
+    border-color: #3550c7;
+  }
+  
+  .sample-queries::-webkit-scrollbar-track,.sample-audio-queries::-webkit-scrollbar-track{
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      background-color: #F5F5F5;
+  }
+  .sample-queries::-webkit-scrollbar,.sample-audio-queries::-webkit-scrollbar{
+      width: 6px;
+      background-color: #FFF;
+  }
+  .sample-queries::-webkit-scrollbar-thumb,.sample-audio-queries::-webkit-scrollbar-thumb{
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      /* background-color: #010544; */
+  }
+  
+  @media only screen and (max-width: 767px){
+    .sample-queries,.sample-audio-queries {
+      height: 200px;
+    }
+    .sample-element,.sample-element-audio{
+      font-size: 16px;
+    }
+  }

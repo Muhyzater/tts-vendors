@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "seismic-pursuit-179813",
+  "private_key_id": "bac2d32fdb0bf1504e4d589e2d34ea1935ba074b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDB7VwsV7dwlfgj\nRc8YiLpNIxGZZfwIQWEk12hh9qgktArt7z3mVwv2+3XxYYwfbQjZYkpwoed90Fza\nlwma4GhqW8Ysv2Ka9PtAaP0xPrLpwOfGn0oERpwIwgR7932s1aPaJzVl6Orjc/Z0\n4su4hBlWiluZ+TPLIG/rqoPxJA9sM8UqQhlg+SbP3RNFop6gyFvWIgy6Tol/XIZZ\nEjKmCurc4Txs1BkxyihKgDnIMzsZozXLU6WGWKXHBlDmRBUqQ9B+PKYhX/PwA2wY\nznRr+GBMfRRQta6A9Pv+fnR5e8Qkj1UW+pMRRbdsk30jRk3fuZyjexq7jmwihReG\nimSW9aAnAgMBAAECggEADESp2hxKfJLgOcsGyPSNZKfdSykKgrMwJBaEgf4KsRe6\nwUarUdEb7qoF0hlrtek98BKpxupXLLxrw2BeuS+NK31W0inhYRAyfOanbeAbjXIo\nt4YINrEI2fz8L6N+jdqOHRTx6dqMUYtaghZ+8NNajwD9voXnYuhQbEZDRpQTbbLU\nhG195w1TRmXA1mgtqQS12S34v4qP+dMh6bFYTuygWcc193J4o5tUp+s8M4f1tGVy\nYbgxgQcqKrOWjGF7RjMxALp62vWboPMs/fI2xqv1j+GpcMFHKQ4pufGnQYrWeWR7\nF2N4oCFLwZS5zvLeg5xJ+uJLHg8ry/oX/ONaXGTUsQKBgQDovbZBs7WOyaOjKn+K\nYm8AGwTYWOmNTHDNXEftXjCx88sm0gvKlzBSknwsenxnlAOBiXJDgIxovUUL4Ed5\nvFWJtXLEVujVdkwdnAYh6Z6HusVwz/MZ6WrhiFB81Ikrn3NbKXxCo9VO77ypTyDu\nwM4oYjC1sau36pFApdVxmSFsDQKBgQDVTqkW/rF7ZCOA5B7AsE9NSgGL93r/I4oO\nZLFy1TGTh25GGLfA9ALpJ0oQly6pQ/psUAvpisIJzAYZ7Sm0BisVhAkDKyGgO016\nIm9c84xXCQ8c/m5dH4voUSuMAi2/Z+f0v8Q1xxl5+C2uLv6gygfh96wTwj35TbGm\nSNoLFpPMAwKBgBPdraLqDgNEHt2ckQpk4IinxcAZxsWy0qYUzGbsdUebQansn+kJ\nAqzpqAO76MaGkc4Kx2APpuyBy1T6Ld+sPbjlbghoSrN9x313heZ7JHb9cEDy3xNF\nI0Rg+E3Pbm30zEnpvpuJlHmKaRYilPMMLgywZOv9YGTwdrmH7jImGf45AoGACSYt\nlIHqJOu/phiixQsK67q/5DwCN41Tr5hcEBva24QUk8cdopYUxeFciOejJbl3tUud\npy+/cOIiZNxKTKFzGaInLM6dy5yfjxyJAEil/VmzH0A+hZoDyzwoDQJO6gXP6iyL\ngu7+RcACXZVAcK8ZtXSFGffb5qSReRto1s7qGfcCgYB+1khS31hLJvgScMfnLT/5\nzT2VqAWV+iKAvSVyufRO01FtTcKdkKe7FKMj9LqvwUu0ajwHk1calQWWLEMdP4oX\n0/9pWLnoJOeP40L8HOpsHpmMTMyqYhT9uOCgyxWr6AJBBLfgGsM/425Yr7N4c7W3\nOsgckQyb0TKkqbSuGsG/jA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "voice-production@seismic-pursuit-179813.iam.gserviceaccount.com",
+  "client_id": "116413589910796136559",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/voice-production%40seismic-pursuit-179813.iam.gserviceaccount.com"
+}

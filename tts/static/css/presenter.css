@@ -1,0 +1,86 @@
+#Presenter {
+    animation: fadein 1s;
+  }
+  #Presenter .card{
+    border: 0;
+    background-color: #fff;
+  }
+  #Presenter .card-body{
+    padding: 0;
+  }
+  #Presenter .text {
+    display: block;
+    font-size: 20px;
+    direction: rtl;
+    text-align: right;
+    color: #010544;
+    line-height: 2;
+  }
+  
+  
+  /* overwrite some bootstrap styles */
+  
+  .card-header {
+    background-color: #55c5cd;
+    color: white;
+  }
+  
+  .line-break {
+    margin: 1rem;
+    border-top: 2px solid #e2e3e5;
+  }
+  
+  .players {
+    padding: 20px;
+    font-family: sans-serif;
+  }
+  
+  .players .player {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  
+  audio {
+    /*width: -webkit-fill-available;*/
+    width: 100%;
+  }
+  .scrollable{
+    max-height: 650px;
+    overflow-y: auto;
+  }
+  
+  @media only screen and (max-width: 767px){
+    #Presenter .text{
+      font-size: 16px;
+    }
+  }
+  
+  .spell-checker-dropdown{
+    display: none;
+    position: absolute;
+    z-index: 999;
+    border: 0;
+    padding: 8px 15px;
+    background-color: white;
+    border-radius: 4px;
+    width: 250px;
+    -webkit-box-shadow: rgb(191, 191, 191) 0px 0px 7px 1px;
+    -moz-box-shadow: rgb(191, 191, 191) 0px 0px 7px 1px;
+    box-shadow: rgb(191, 191, 191) 0px 0px 7px 1px;
+  }
+  .spell-checker-dropdown .title{
+    direction: rtl;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #010544;
+  }
+  :host ::ng-deep .suggestion-item{
+    margin: 0;
+    cursor: pointer;
+    text-align: right;
+    padding: 8px 0;
+    font-weight: bold;
+    color: #010544;
+    direction: rtl;
+  }

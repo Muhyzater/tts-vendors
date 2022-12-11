@@ -1,0 +1,185 @@
+#single-api{
+    background-color: #fff;
+    padding: 50px 0 50px;
+  }
+  #single-api .header{
+      margin-bottom: 50px;
+  }
+  #single-api .header>div{
+      margin-left: 10px;
+  }
+  #single-api .header>a{
+      height: 20px;
+      margin-top: 3px;
+  }
+  #single-api .title{
+    color: #010544;
+    font-size: 32px;
+      margin-bottom: 8px;
+      margin-top: 1px;
+  }
+  #single-api .sub-title{
+    font-size: 18px;
+      color: #3550c7c7;
+      margin-bottom: 10px;
+      max-width: 750px;
+  }
+  #single-api .documentation-btn{
+    position: absolute;
+    right: 15px;
+    top: 0;
+  }
+  #single-api .documentation-btn .btn{
+    color: #fff!important;
+    background-color: #D85728;
+    border: 2px solid #D85728;
+    padding-left: 20px;
+  }
+  #single-api .documentation-btn .btn span{
+    top: 2px;
+    right: 4px;
+  }
+  #single-api .text-area-title{
+    font-size: 20px;
+    color: #010544;
+    margin-bottom: 0;
+  }
+  #single-api .prompt-sign-up{
+    color: #010544;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  #single-api .prompt-sign-up a{
+    text-decoration: none;
+    color: #3550c7;
+  }
+  #single-api .presenter-cont{
+    padding: 15px;
+    border: solid 1px #3550c7;
+    border-radius: 6px;
+    height: 350px;
+    overflow: auto;
+    margin-bottom: 16px;
+  }
+  #single-api .analyze-cont{
+    display: flex;
+    align-items: center;
+  }
+  #single-api #btn-send{
+    font-size: 18px;
+    height: 85px;
+    width: 85px;
+    border-radius: 60px;
+    margin: 0 auto;
+    color: #fff;
+    padding: 12px 18px 8px 8px;
+    background-color: #010544;
+    border-color: #010544;
+    cursor: pointer;
+    box-shadow: none;
+  }
+  #single-api .oi-chevron-right{
+    font-size: 12px;
+  }
+  #single-api .text-area-field{
+    border: solid 1px #3550c7;
+    border-radius: 6px;
+    height: 154px;
+    font-size: 20px;
+    padding: 15px;
+    color: #010544;
+    resize: none;
+    line-height: 2;
+  }
+  #single-api .text-area-field.question{
+      height: 54px;
+      padding: 6px 15px;
+  }
+  #single-api .normalization-table .lead{
+    color: #010544;
+    margin-top: 15px;
+  }
+  #single-api .normalization-table label{
+    color: #010544;
+  }
+  #recorder{
+      margin-bottom: 20px;
+  }
+  #recorder .btn-convert{
+      color: #fff!important;
+      border: 2px solid #fff;
+      background-color: #010544;
+      outline: none;
+      cursor: pointer;
+      width: 215px;
+      height: 50px;
+      padding: 13px 0;
+      box-shadow: none;
+      margin-top: 5px;
+  }
+  #recorder .card-body{
+    padding: 10px;
+  }
+  #single-api .limit-warning{
+      color: red;
+      float: right;
+      font-size: 18px;
+    }
+    
+  @media only screen and (max-width: 767px){
+      #single-api{
+          padding: 50px 0 50px;
+      }
+      #single-api .header{
+          margin-bottom: 0px;
+          margin-top: 40px;
+      }
+      #single-api .header>a{
+          margin-top: -1px;
+      }
+      #single-api .header img{
+          width: 10px;
+      }
+      #single-api .title{
+          font-size: 24px;
+          margin-bottom: 20px;
+      }
+      #single-api .sub-title{
+          font-size: 16px;
+          margin-bottom: 25px;
+      }
+      #single-api .documentation-btn{
+          top: -60px;
+      }
+      #single-api .documentation-btn .btn{
+          font-size: 14px;
+      }
+      #single-api .presenter-cont{
+          height: 200px;
+      }
+      #single-api #btn-send{
+      margin: 10px auto;
+      font-size: 18px;
+      }
+      #single-api .text-area-field{
+      height: 200px;
+      font-size: 16px;
+    }
+  }
+  
+  #single-api .text-area-field::-webkit-scrollbar-track{
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      background-color: #F5F5F5;
+  }
+  #single-api .text-area-field::-webkit-scrollbar{
+      width: 6px;
+      background-color: #FFF;
+  }
+  #single-api .text-area-field::-webkit-scrollbar-thumb{
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      /* background-color: #010544; */
+  }
+  
+  
